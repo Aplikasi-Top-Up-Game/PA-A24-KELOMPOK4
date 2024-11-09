@@ -1,0 +1,117 @@
+{
+    "1": {
+        "nama": "Mobile Legend",
+        "paket_topup": [
+            {
+                "No": "1",
+                "paket": "150 diamond + 14 Bonus",
+                "harga": 38000
+            },
+            {
+                "No": "2",
+                "paket": "200 diamond + 15 Bonus",
+                "harga": 61000
+            },
+            {
+                "No": "3",
+                "paket": "150 diamond + 14 Bonus",
+                "harga": 38000
+            },
+            {
+                "No": "4",
+                "paket": "200 diamond + 15 Bonus",
+                "harga": 61000
+            },
+            {
+                "No": "5",
+                "paket": "1050 diamond + 50 Bonus",
+                "harga": 300000
+            }
+        ]
+    },
+    "2": {
+        "nama": "Genshin Impact",
+        "paket_topup": [
+            {
+                "No": "1",
+                "paket": "Blessing Welkin Moon",
+                "harga": 60000
+            },
+            {
+                "No": "2",
+                "paket": "60 Crystal",
+                "harga": 13000
+            },
+            {
+                "No": "3",
+                "paket": "300 + 30 Crystal",
+                "harga": 38000
+            },
+            {
+                "No": "4",
+                "paket": "980 + 110 Crystal",
+                "harga": 61000
+            },
+            {
+                "No": "5",
+                "paket": "1280 + 140 Crystal",
+                "harga": 242000
+            }
+        ]
+    },
+    "3": {
+        "nama": "Honkai Star Rail",
+        "paket_topup": [
+            {
+                "No": "1",
+                "paket": "Express Supply Pass",
+                "harga": 60000
+            },
+            {
+                "No": "2",
+                "paket": "60 Oneric Shard",
+                "harga": 15000
+            },
+            {
+                "No": "3",
+                "paket": "300 + 30 Oneric Shard",
+                "harga": 60000
+            },
+            {
+                "No": "4",
+                "paket": "980 + 110 Oneric Shard",
+                "harga": 179000
+            },
+            {
+                "No": "5",
+                "paket": "1280 + 140 Oneric Shard",
+                "harga": 238000
+            }
+        ]
+    },
+    "4": {
+        "nama": "Valorant",
+        "paket_topup": [
+            {
+                "No": "1",
+                "paket": "475 Points",
+                "harga": 55000
+            },
+            {
+                "No": "2",
+                "paket": "1000 Points",
+                "harga": 108000
+            },
+            {
+                "No": "3",
+                "paket": "2050 Points",
+                "harga": 215000
+            },
+            {
+                "No": "4",
+                "paket": "3650 Points",
+                "harga": 370000
+            }
+        ]
+    }
+}
