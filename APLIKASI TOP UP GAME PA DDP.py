@@ -490,17 +490,6 @@ def hapus_paketTopup(data):
         except Exception as e:
             print(f"Terjadi kesalahan: {e}")
             break
-
-def tanya_sorting(data):
-    
-    tanya = input("Apakah Anda ingin mengurutkan paket berdasarkan harga? (y/t): ").lower()
-    if tanya == "y":
-        sorted_data = sorting_harga(data)
-        tampilkan_produk(sorted_data) 
-    elif tanya == "t":
-        print("Sorting dibatalkan.")
-    else:
-        print("Input tidak valid.")
     
 def cek_saldo(user):
     os.system('cls')  
