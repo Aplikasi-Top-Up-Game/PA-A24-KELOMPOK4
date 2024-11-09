@@ -3,13 +3,9 @@ import pwinput
 from prettytable import PrettyTable
 import os
 
-os.system("cls")
-
-# Path File JSON
 USERS_FILE = r"C:\Users\ASUS\Documents\belajar json 1\data_login.json"
 GAME_FILE = r"C:\Users\ASUS\Documents\belajar json 1\gametopup.json"
-
-           
+    
 def buka_data(filename):
     try:
         with open(filename, 'r') as file:
@@ -111,7 +107,6 @@ def login_admin(users):
             print("Terjadi kesalahan. Harap jangan tekan CTRL + C!")
         except Exception as e:
             print(f"Terjadi kesalahan: {e}")
-
       
 def login_user(users):
     os.system('cls')
@@ -496,12 +491,6 @@ def hapus_paketTopup(data):
             print(f"Terjadi kesalahan: {e}")
             break
 
-# Fungsi untuk sorting
-def sorting_harga(data):
-    return sorted(data, key=lambda x: x['harga'])
-
-
-# Fungsi apakah ingin sorting
 def tanya_sorting(data):
     
     tanya = input("Apakah Anda ingin mengurutkan paket berdasarkan harga? (y/t): ").lower()
@@ -532,7 +521,7 @@ def cek_saldo(user):
 def tambah_saldo(user):
     MIN_TOPUP = 15000  
     MAX_TOPUP = 2000000
-    
+
     users = buka_data(USERS_FILE)
     while True:
         try:
@@ -682,14 +671,13 @@ def cari_game(data, user):
                         return
             else:
                 print("Game tidak ditemukan. Harap input nama game yang benar.")
-                continue
+                break
         except KeyboardInterrupt:
             print("Program mengalami gangguan. Harap jangan tekan CTRL + C!")
         except FileNotFoundError:
             print("Data tidak ditemukan. Pastikan file data ada dan dapat diakses.")
         except Exception as e:
             print(f"Terjadi kesalahan: {e}")
- 
 
 def sorting_harga(data):
     while True: 
@@ -721,7 +709,7 @@ def sorting_harga(data):
 def buat_invoice(user, paket_dibeli, filename="invoice.txt"):
     
     invoice = f"=== RIWAYAT TOP-UP ===\n"
-    invoice += f"Nama Pengguna: {user['username']}\n"
+    invoice += f"Username: {user['username']}\n"
     invoice += f"Paket yang Dibeli: {paket_dibeli['paket']}\n"
     invoice += f"Harga: Rp {paket_dibeli['harga']}\n"
     invoice += f"Sisa Saldo: Rp {user['saldo']}\n"
@@ -734,7 +722,7 @@ def buat_invoice(user, paket_dibeli, filename="invoice.txt"):
     print("\n" + "=" * 30)
     print("=== RIWAYAT TOP-UP ===")
     print("=" * 30)
-    print(f"Nama Pengguna: {user['username']}")
+    print(f"Username: {user['username']}")
     print(f"Paket yang Dibeli: {paket_dibeli['paket']}")
     print(f"Harga: Rp {paket_dibeli['harga']}")
     print(f"Sisa Saldo: Rp {user['saldo']}")
@@ -742,7 +730,6 @@ def buat_invoice(user, paket_dibeli, filename="invoice.txt"):
     print("Terima kasih telah melakukan top-up!")
     print("=" * 30)
 
-# Main menu
 def main():
     while True:
         users = buka_data(USERS_FILE) 
@@ -778,8 +765,6 @@ def main():
         except KeyboardInterrupt:
             print("Terjadi kesalahan. Harap jangan tekan CTRL + C!")
             
-
-# fungsi untuk menu admin
 def menu_admin(users):
     user = buka_data(USERS_FILE)
     data = buka_data(GAME_FILE)
