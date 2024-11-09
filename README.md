@@ -1,5 +1,11 @@
 # PA-A24-KELOMPOK4
 
+# FLOWCHART
+
+![image](https://github.com/user-attachments/assets/3031fb07-b777-4005-a92a-8db98d9b4e77)
+
+
+
 # OUTPUT PROGRAM
 
 ## A.Tampilan Awal Program
