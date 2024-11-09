@@ -1,10 +1,5 @@
 # PA-A24-KELOMPOK4
 
-# FLOWCHART
-
-
-
-
 # OUTPUT PROGRAM
 
 ## A.Tampilan Awal Program
